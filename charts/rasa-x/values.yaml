@@ -74,7 +74,7 @@ rasa:
   # token Rasa accepts as authentication token from other Rasa services
   token: "rasaToken"
   # rabbitQueue it should use to dispatch events to Rasa X
-  rabbitQueue: "rasa_production_events"
+  # rabbitQueue: "rasa_production_events"
   # additionalChannelCredentials which should be used by Rasa to connect to various
   # input channels
   additionalChannelCredentials: {}
@@ -322,7 +322,7 @@ postgresql:
 # RabbitMQ specific settings (https://github.com/bitnami/charts/tree/c9ce341bff8c1c5ae3f385aaa8aba129075f2a5c/bitnami/rabbitmq)
 rabbitmq:
   # Install should be `true` if the rabbitmq subchart should be used
-  install: true
+  install: false
   # rabbitmq settings of the subchart
   rabbitmq:
     # username which is used for the authentication
